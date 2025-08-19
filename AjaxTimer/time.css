@@ -1,0 +1,25 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+      background-color: #f2f2f2;
+    }
+
+    #timeDisplay {
+      font-size: 48px;
+      margin-bottom: 30px;
+    }
+
+    button {
+      font-size: 18px;
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+    }
+    
+    #startBtn { background-color: #4CAF50; color: white; }
+    #pauseBtn { background-color: #f0ad4e; color: white; }
+    #resetBtn { background-color: #d9534f; color: white; }
