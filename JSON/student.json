@@ -1,0 +1,17 @@
+
+
+
+
+
+{
+  "student": {
+    "name": "Rajesh Shelke",
+    "age": 20,
+    "address": {
+      "street": "Mangalwar Peth",
+      "city": "Pune"
+    },
+    "subjects": ["Math", "Physics", "English"],
+    "active": true
+  }
+}
