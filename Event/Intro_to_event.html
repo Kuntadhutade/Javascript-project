@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box 3</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+
+        
+    </div>
+
+    <span id="firstspan">I am a span</span>
+
+    <input type="text" id="input">
+
+    <script>
+        const firstspan = document.getElementById("firstspan")
+
+        firstspan.addEventListener('click', ()=>{
+            alert("hello")
+        })
+
+
+        const input = document.getElementById("input")
+
+        // input.addEventListener('keyup', ()=>{
+        //     alert("key pressed")
+        //     console.log(event)
+
+        
+        input.addEventListener('keyup', (event)=>{
+            alert("key pressed")
+            console.log(event.key)
+        })
+
+
+
+        const box = document.querySelector('.box');
+        box.addEventListener('mouseover', () => {
+            box.style.backgroundColor ='red'
+        })
+
+        box.addEventListener('mouseout', () => {
+            box.style.backgroundColor ='yellow'
+        })
+
+
+    </script>
+</body>
+</html> 
