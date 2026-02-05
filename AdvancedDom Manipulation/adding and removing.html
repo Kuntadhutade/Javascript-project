@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <!-- <div class="box">Box 3</div> -->
+        <div class="box" id="box3">Box 3</div>
+        <div class="box">Box 4</div>
+        <div class="box">Box 5</div>
+    </div>
+
+
+    <script>
+        let box = document.createElement("div")
+        box.innerText = "Box 6"
+        box.setAttribute("class",  "box")
+
+        let container = document.querySelector(".container")
+        container.appendChild(box,"kunta")
+        container.append(box,"kunta","prakash","parmi")
+        container.prepend(box)      //towards the beginning of container
+        // container.removeChild(box3)    
+
+        // let box3 = document.getElementById("box3")
+        // container.removeChild(box3)
+    </script>
+</body>
+</html>
