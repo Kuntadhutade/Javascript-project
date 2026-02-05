@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .black{
+            background-color:  red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 3</div>
+
+        <button onclick="magic()">Do the magic</button>
+    </div>
+
+    <script>
+        function magic(){
+            let divs = document.getElementsByTagName("div")
+             console.log(divs)
+            
+
+
+            for (element of divs){
+            element.innerHTML = element.innerHTML + "<p>I am good</p>"
+            }
+
+
+            // another way
+        //     for (element of divs){
+        // element.classList.add("black")
+        //     }
+
+
+
+           
+
+
+        }
+    </script>
+</body>
+</html>
